@@ -10,7 +10,7 @@ import javax.annotation.Resource;
  * @author leizhao
  */
 @RestController
-public class HelloWorldController {
+public class HelloWorldController1 {
 
     @Value("${test.value:aaa}")
     private String value;
@@ -18,7 +18,7 @@ public class HelloWorldController {
     @Resource
     private TestBean testBean;
 
-    @RequestMapping("/hello")
+    @RequestMapping("/hello1")
     public String sayHello() {
         return testBean.toString();
     }
