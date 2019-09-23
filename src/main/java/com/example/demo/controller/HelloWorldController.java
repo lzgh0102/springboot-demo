@@ -20,6 +20,7 @@ public class HelloWorldController {
 
     @RequestMapping("/hello")
     public String sayHello() {
+        // test
         return testBean.toString();
     }
 }
